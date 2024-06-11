@@ -1,0 +1,11 @@
+.footer {
+    background-color: var(--footer-bg);
+    padding: 20px 0;
+}
+
+.container {
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
