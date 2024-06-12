@@ -1,11 +1,16 @@
-import React from 'react'
+import ImageHero from "@/components/television/ImageHero/ImageHero";
+import VideoButtons from "@/components/television/VideoButtons/VideoButtons";
+import css from './page.module.css'
 
 const page = () => {
   return (
-    <div>
-      Solidaria TV
-    </div>
-  )
-}
+    <section>
+      <div className={css.container}>
+        <ImageHero />
+        <VideoButtons />
+      </div>
+    </section>
+  );
+};
 
-export default page
+export default page;

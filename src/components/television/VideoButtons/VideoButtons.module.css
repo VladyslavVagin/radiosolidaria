@@ -1,0 +1,17 @@
+.buttonsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    border: none;
+    outline: none;
+    height: 44px;
+    background-color: rgb(233, 132, 0);
+    color: var(--white-color);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 0 12px;
+}
