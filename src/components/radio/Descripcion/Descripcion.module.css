@@ -1,0 +1,52 @@
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.5rem 0;
+}
+
+.iconYoutube {
+  width: 34px;
+  height: 34px;
+}
+
+.link {
+  max-height: 34px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.showMoreBtn {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  font-weight: 600;
+}
+
+.showMoreBtn:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.youtubeBox {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: rgb(161, 40, 40);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.text {
+  text-align: justify;
+}

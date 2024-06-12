@@ -1,6 +1,19 @@
 .text {
-    color: var(--copy-color);
+  color: var(--copy-color);
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.linksBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.linksBox a {
     font-size: 14px;
-    margin-top: 10px;
-    text-align: center;
+    color: var(--copy-color);
+    text-decoration: underline;
 }

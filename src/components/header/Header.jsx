@@ -1,12 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import Logo from "./Logo/Logo";
 import BurgerBtn from "./BurgerBtn/BurgerBtn";
+import MobileMenu from "./MobileMenu/MobileMenu";
 import css from "./Header.module.css";
 
 const Header = () => {
   const [isShowMobile, setIsShowMobile] = useState(false);
+  const isTablet = useMediaQuery({ minWidth: 768 });
 
   const handleClickShowMobile = () => {
     setIsShowMobile((prev) => !prev);
@@ -24,12 +27,19 @@ const Header = () => {
   operateScroll();
 
   return (
-    <header className={css.header}>
-      <div className={css.container}>
-        <Logo />
-        <BurgerBtn onClick={handleClickShowMobile} isOpen={isShowMobile} />
-      </div>
-    </header>
+    <>
+      <header className={css.header}>
+        <div className={css.container}>
+          <Logo />
+          {!isTablet && (
+            <BurgerBtn onClick={handleClickShowMobile} isOpen={isShowMobile} />
+          )}
+        </div>
+      </header>
+      {isShowMobile && !isTablet && (
+        <MobileMenu setIsShowMobile={setIsShowMobile} />
+      )}
+    </>
   );
 };
 
