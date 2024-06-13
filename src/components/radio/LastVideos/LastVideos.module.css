@@ -1,0 +1,31 @@
+.videosContainer {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.title {
+  letter-spacing: 0.02em;
+  border-top: 1px solid var(--radio-red);
+  border-bottom: 1px solid var(--radio-red);
+  margin-bottom: 8px;
+}
+
+.title > span {
+  color: var(--radio-red);
+}
+
+.link {
+  display: inline-block;
+  background-color: var(--radio-red);
+  padding: 6px 12px;
+  margin-top: 12px;
+  border-radius: 20px;
+  color: var(--white-color);
+  font-weight: 600;
+  transition: var(--hover-effect);
+}
+
+.link:hover {
+  background-color: var(--white-color);
+  color: var(--radio-red);
+}

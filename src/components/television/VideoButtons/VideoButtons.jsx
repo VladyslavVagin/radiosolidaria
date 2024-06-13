@@ -1,19 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Hls from "hls.js";
 import css from "./VideoButtons.module.css";
 
 const VideoButtons = () => {
-  const SpainTV = 'https://www.solidariatv.com/0c32e290-4325-4b89-afd7-87ea114e7012';
-  const ArgentinaTV = "https://www.solidariatv.com/en-vivo-argentina/";
-  const [videoUrl, setVideoUrl] = useState(SpainTV);
+  const videoRef = useRef(null);
+  const SpainTV =
+    "https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8";
+  const ArgentinaTV =
+    "https://canadaremar2.todostreaming.es/live/argentina-web.m3u8";
+  const [urlTv, setUrlTv] = useState(SpainTV);
+
+  useEffect(() => {
+    const hls = new Hls();
+    const video = videoRef.current;
+
+    if (Hls.isSupported() && video) {
+      hls.loadSource(urlTv);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        video.play();
+      });
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      // Some browsers (like Safari) can play M3U8 natively
+      video.src = urlTv;
+      video.addEventListener("loadedmetadata", function () {
+        video.play();
+      });
+    }
+  }, [urlTv]);
 
   const handleSpainTV = () => {
-    setVideoUrl(SpainTV);
+    setUrlTv(SpainTV);
   };
 
   const handleArgentinaTV = () => {
-    setVideoUrl(ArgentinaTV);
+    setUrlTv(ArgentinaTV);
   };
 
   return (
@@ -36,12 +59,11 @@ const VideoButtons = () => {
           Solidaria TV Argentina
         </button>
       </div>
-      {videoUrl && (
-        <video controls autoPlay muted>
-          <source src={videoUrl} />
+      <div className={css.videoContainer}>
+        <video controls autoPlay muted className={css.video} ref={videoRef}>
           Your browser does not support the video tag.
         </video>
-      )}
+      </div>
     </>
   );
 };
