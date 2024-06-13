@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+}
+
+.title {
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  
+  .title > span {
+    color: var(--tv-color);
+  }

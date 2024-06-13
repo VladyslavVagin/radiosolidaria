@@ -1,0 +1,15 @@
+.listLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linkBtn {
+  width: 132px;
+  height: 100px;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
