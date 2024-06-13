@@ -19,16 +19,12 @@ const LastVideos = () => {
   return (
     <div className={css.videosContainer}>
       <h2 className={css.title}>
-        Las últimas videos de <span>Youtube</span>
+        Las últimas videos de <span>Youtube</span> canal
       </h2>
       <Swiper
-        spaceBetween={10}
+        spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-        navigation={false}
+        navigation={true}
         modules={[Scrollbar, Navigation]}
         scrollbar={{ draggable: true }}
         className="mySwiper"

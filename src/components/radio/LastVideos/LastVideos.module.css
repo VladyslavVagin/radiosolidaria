@@ -29,3 +29,7 @@
   background-color: var(--white-color);
   color: var(--radio-red);
 }
+
+.swiper-button-prev, .swiper-button-next {
+    color: var(--radio-red);
+}

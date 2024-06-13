@@ -212,3 +212,7 @@ a {
 button {
   cursor: pointer;
 }
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--radio-red)!important;
+}
