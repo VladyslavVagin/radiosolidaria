@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Navigation } from "swiper/modules";
 import css from "./LastVideos.module.css";
@@ -9,6 +10,7 @@ import "swiper/css";
 
 const LastVideos = () => {
   const [videos, setVideos] = useState([]);
+  const isMobile = useMediaQuery({minWidth: 375});
 
   useEffect(() => {
     fetch("/youtube/radioSolidaria/videos.json")
@@ -25,6 +27,7 @@ const LastVideos = () => {
         spaceBetween={30}
         centeredSlides={true}
         navigation={true}
+        slidesPerView={1}
         modules={[Scrollbar, Navigation]}
         scrollbar={{ draggable: true }}
         className="mySwiper"
@@ -33,8 +36,8 @@ const LastVideos = () => {
           <SwiperSlide key={video._id}>
             <div>
               <iframe
-                width="300"
-                height="200"
+                width="100%"
+                height={isMobile ? '300' : '200'}
                 src={video.url}
                 title="YouTube video player"
                 frameborder="0"

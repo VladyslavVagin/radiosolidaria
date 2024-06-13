@@ -5,8 +5,6 @@
 
 .title {
   letter-spacing: 0.02em;
-  border-top: 1px solid var(--radio-red);
-  border-bottom: 1px solid var(--radio-red);
   margin-bottom: 8px;
 }
 
