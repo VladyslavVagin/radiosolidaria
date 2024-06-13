@@ -10,14 +10,14 @@ export const cardsInfo = [
   },
   {
     id: "2",
-    title: "Frecuencias",
+    title: "Frecuencias TV Argentina",
     image: "/images/solidariaTV/frequencias.webp",
     info: <Frequencias />,
   },
   {
     id: "3",
-    title: "Solidaria TV Argentina",
-    image: "/images/solidariaTV/solidaria-tv-argentina.webp",
+    title: "Pedidos de Oración",
+    image: "/images/solidariaTV/pedidos-oracion.webp",
     info: "Nuestra programación es variada y cuenta con un 70% de programación propia. Tenemos programas infantiles, musicales, programas en vivo, deportivos, enseñanzas, predicaciones y mucho más. Llevamos desde 2007 emitiendo en Argentina 24 horas diarias ofreciendo nuestra programación a la comunidad. Nuestros fundamentos son cristianos y creemos que nuestro progreso y posibilidad de ayudar a los demás es totalmente posible a causa de la gracia de Dios. En Argentina actualmente estamos emitiendo en 12 ciudades y 1 canal de cable en Uruguay. Solidaria TV empezó en España en los años 90 y actualmente estamos emitiendo en España, Bolivia, Uruguay y Argentina. Nos hace muy felices poder ser parte de la solución y no el problema; además de poder sembrar con lo que Dios pone en nuestras manos.",
   },
   {
