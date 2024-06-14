@@ -2,33 +2,28 @@
     "videos": [
         {
             "_id": "1",
-            "title": "El Significado de Ser Bienaventurado // Salmo 65",
-            "url": "https://www.youtube.com/embed/3qScYTKqSko?si=TwkKN0QWnZqYHi3d",
-            "publishedAt": "2022-01-01T00:00:00Z"
+            "title": "La Importancia del Bautismo en Agua // Predicación Miguel Diez",
+            "url": "https://www.youtube.com/embed/POL1NV-aDyU?si=MjCsP57x3ocnY3Zt"
         },
         {
             "_id": "2",
-            "title": "Noticias de Actualidad - 11 de Junio // Charlas Bíblicas",
-            "url": "https://www.youtube.com/embed/15EYqRcQFmg?si=HeY8cq1L0HsgDjDZ",
-            "publishedAt": "2024-06-01T00:00:00Z"
+            "title": "Dios Siempre Cumple: Explorando Su Fidelidad Impecable",
+            "url": "https://www.youtube.com/embed/E0ChiMxaF44?si=uSJQd_Otpv-tZF0C"
         },
         {
             "_id": "3",
-            "title": "La Situación Actual en Gaza y una Invitación Especial",
-            "url": "https://www.youtube.com/embed/PNSYs6AP9sU?si=q5YLMJbjbRnwCZQd",
-            "publishedAt": "2024-06-02T00:00:00Z"
+            "title": "Orar sin Cesar: La Arma Secreta de los Guerreros de la Fe // Miguel Díez",
+            "url": "https://www.youtube.com/embed/qERjAxMNYGE?si=-kI6ctkebra0MfUs"
         },
         {
             "_id": "4",
-            "title": "Explorando el Corazón de la Existencia Humana // Salmo 64",
-            "url": "https://www.youtube.com/embed/FdxBG_JSenM?si=p7nFgLhkBXl0koCi",
-            "publishedAt": "2024-06-03T00:00:00Z"
+            "title": "El PLAN ORIGINAL de Dios para tu vida // Miguel Díez",
+            "url": "https://www.youtube.com/embed/nIjV47n-PGU?si=XQ4SPD_-NEVy3d7Y"
         },
         {
             "_id": "5",
-            "title": "Plagas Globales, Animales Peligrosos y Eventos Solares // Escatología Bíblica del Fin",
-            "url": "https://www.youtube.com/embed/P_XF8uGyvyw?si=uhrHHQXntvWqtDoA",
-            "publishedAt": "2024-06-04T00:00:00Z"
+            "title": "Aprovecha las oportunidades que Dios te da // Miguel Díez",
+            "url": "https://www.youtube.com/embed/jhHGMzUoxG0?si=l0gCgUlF8xDfHwZf"
         }
     ]
 }

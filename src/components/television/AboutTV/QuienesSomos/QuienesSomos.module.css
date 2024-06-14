@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.container h3 {
+    text-align: center;
+}
+
+.container p {
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}

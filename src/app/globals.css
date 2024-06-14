@@ -195,9 +195,12 @@ p {
   padding: 0;
 }
 
-ul,
-ol {
+ul {
   list-style: none;
+  padding: 0;
+}
+
+ol {
   padding: 0;
 }
 
@@ -212,6 +215,10 @@ a {
 
 button {
   cursor: pointer;
+}
+
+.swiper {
+  height: 240px;
 }
 
 .swiper-button-prev, .swiper-button-next {

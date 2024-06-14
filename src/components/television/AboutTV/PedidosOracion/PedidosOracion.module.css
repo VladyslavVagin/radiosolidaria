@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.container h4 {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.container p {
+  text-align: justify;
+}
+
+.link {
+  color: var(--tv-color);
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}

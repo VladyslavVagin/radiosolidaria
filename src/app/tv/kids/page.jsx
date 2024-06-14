@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import SolidariaTV from "@/components/television/SolidariaTV/SolidariaTV";
 
 const page = () => {
   return (
     <div>
-      Kids TV
+      <SolidariaTV />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

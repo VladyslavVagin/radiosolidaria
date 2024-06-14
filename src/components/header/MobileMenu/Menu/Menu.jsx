@@ -1,4 +1,7 @@
+'use client';
+
 import React from "react";
+import { usePathname } from "next/navigation";
 import NavLink from "../NavLink/NavLink";
 import css from "./Menu.module.css";
 
@@ -10,6 +13,8 @@ const links = [
 ];
 
 const Menu = ({setIsShowMobile}) => {
+const pathname = usePathname();
+
   return (
     <ul className={css.menu}>
       {links.map((link, index) => (

@@ -1,0 +1,11 @@
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 43px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  padding: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+}

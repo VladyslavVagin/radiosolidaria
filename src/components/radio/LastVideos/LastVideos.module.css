@@ -31,3 +31,7 @@
 .swiper-button-prev, .swiper-button-next {
     color: var(--radio-red);
 }
+
+.videoContainer {
+  border-radius: 20px;
+}
