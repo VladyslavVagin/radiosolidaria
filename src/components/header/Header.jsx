@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Logo from "./Logo/Logo";
 import BurgerBtn from "./BurgerBtn/BurgerBtn";
+import NavMenu from "./NavMenu/NavMenu";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import css from "./Header.module.css";
 
@@ -31,9 +32,9 @@ const Header = () => {
       <header className={css.header}>
         <div className={css.container}>
           <Logo />
-          {!isTablet && (
+          {!isTablet ? (
             <BurgerBtn onClick={handleClickShowMobile} isOpen={isShowMobile} />
-          )}
+          ) : (<NavMenu />)}
         </div>
       </header>
       {isShowMobile && !isTablet && (

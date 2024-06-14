@@ -10,3 +10,15 @@
   height: 32px;
   fill: var(--tv-color);
 }
+
+@media screen and (min-width: 768px) {
+  .link {
+    max-width: 42px;
+    max-height: 42px;
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+  }
+}

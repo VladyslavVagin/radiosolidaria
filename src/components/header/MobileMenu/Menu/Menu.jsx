@@ -2,15 +2,9 @@
 
 import React from "react";
 import { usePathname } from "next/navigation";
+import { links } from "@/app/lib/linksMenu";
 import NavLink from "../NavLink/NavLink";
 import css from "./Menu.module.css";
-
-const links = [
-  { title: "icon-home", path: "/" },
-  { title: "icon-radio", path: "/radio" },
-  { title: "icon-tv", path: "/tv" },
-  { title: "icon-info", path: "/about" },
-];
 
 const Menu = ({setIsShowMobile}) => {
 const pathname = usePathname();
@@ -18,7 +12,7 @@ const pathname = usePathname();
   return (
     <ul className={css.menu}>
       {links.map((link, index) => (
-        <li key={index} onClick={() => setIsShowMobile(false)} className={css.item}>
+        <li key={index} onClick={() => setIsShowMobile(false)} className={pathname === link.path ? css.active : css.item}>
           <NavLink link={link}/> 
         </li>
       ))}

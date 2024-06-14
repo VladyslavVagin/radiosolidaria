@@ -1,0 +1,12 @@
+.listMenu {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--tv-color);
+}
