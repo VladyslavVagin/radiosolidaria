@@ -45,18 +45,18 @@ const VideoButtons = () => {
         <button
           type="button"
           aria-label="Abrir televisión en vivo de Solidaria TV España"
-          className={css.button}
+          className={urlTv === SpainTV ? css.activeButton : css.button}
           onClick={handleSpainTV}
         >
-          Solidaria TV España
+          TV España
         </button>
         <button
           type="button"
           aria-label="Abrir televisión en vivo de Solidaria TV Argentina"
-          className={css.button}
+          className={urlTv === ArgentinaTV ? css.activeButton : css.button}
           onClick={handleArgentinaTV}
         >
-          Solidaria TV Argentina
+          TV Argentina
         </button>
       </div>
       <div className={css.videoContainer}>

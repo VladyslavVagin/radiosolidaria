@@ -6,11 +6,25 @@
 }
 
 .button {
+    width: 118px;
     border: none;
     outline: none;
     height: 44px;
-    background-color: rgb(233, 132, 0);
+    background-color: var(--tv-color);
     color: var(--white-color);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 0 12px;
+}
+
+.activeButton {
+    width: 118px;
+    border: none;
+    outline: none;
+    height: 42px;
+    background-color: var(--white-color);
+    color: var(--tv-color);
+    border: 1px solid var(--tv-color);
     border-radius: 20px;
     font-size: 14px;
     padding: 0 12px;

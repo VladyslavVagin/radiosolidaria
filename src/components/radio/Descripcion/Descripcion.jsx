@@ -11,11 +11,11 @@ const [showMore, setShowMore] = useState(false);
 
   return (
     <div>
-      <h2 className={css.title}>Sobre Radio Solidaria</h2>
+      <h2 className={css.title}>Sobre <span className={css.accent}>Radio Solidaria</span></h2>
       <p onClick={() => setShowMore(false)} className={css.text}>
-        Radio Solidaria es un medio de comunicación por medio del cual la ONG
+        <strong>Radio Solidaria</strong> es un medio de comunicación por medio del cual la ONG
         REMAR ha promovido a lo largo de más de 38 años la divulgación de un
-        mensaje limpio y diferente, una Radio cristiana sensible a las
+        mensaje limpio y diferente, una <strong>Radio cristiana</strong> sensible a las
         situaciones de desigualdad de esta sociedad, que brinda apoyo y que es
         consciente de las necesidades de miles de personas, enviando siempre un
         mensaje de esperanza a una sociedad que vive en medio de diversos

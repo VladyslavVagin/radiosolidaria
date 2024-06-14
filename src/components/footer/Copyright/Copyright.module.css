@@ -16,4 +16,11 @@
     font-size: 14px;
     color: var(--copy-color);
     text-decoration: underline;
+    transition: var(--hover-effect);
 }
+
+.linksBox a:hover {
+    color: var(--tv-color);
+}
+
+

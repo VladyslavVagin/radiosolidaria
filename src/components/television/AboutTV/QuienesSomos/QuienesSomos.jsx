@@ -5,9 +5,9 @@ import css from "./QuienesSomos.module.css";
 const QuienesSomos = () => {
   return (
     <div className={css.container}>
-      <h3>¿ Quienes Somos ?</h3>
+      <h3><span className={css.accent}>¿ Quienes</span> Somos ?</h3>
       <p>
-        RTV Solidaria es un medio de comunicación comprometida con la sociedad
+        <strong>RTV Solidaria</strong> es un medio de comunicación comprometida con la sociedad
         con principios bíblicos y mas de 30 años de trabajo. Contamos con
         canales de televisión abiertas en España, Argentina y Bolivia. Radios en
         distintas ciudades de España y de Argentina. También una amplia
@@ -15,13 +15,13 @@ const QuienesSomos = () => {
         suscriptores) y TikTok (50 mil seguidores).
       </p>
       <p>
-        Queremos seguir siendo una herramienta positiva para la sociedad
+        Queremos seguir siendo una <strong>herramienta positiva</strong> para la sociedad
         ofreciendo contenidos de valores y de ayuda práctica para todo el
         público y para todas las edades. RTV También colabora con distintas ONG
         por todo el mundo.
       </p>
       <p>
-        Puedes colaborar con nosotros compartiendo nuestros contenidos o siendo
+        Puedes <strong>colaborar con nosotros</strong> compartiendo nuestros contenidos o siendo
         socio para que; con tu ayuda, podemos llegar a mas hogares y familias.
       </p>
       <Image

@@ -17,3 +17,7 @@
     height: auto;
     margin: 20px 0;
 }
+
+.accent {
+    color: var(--tv-color);
+}

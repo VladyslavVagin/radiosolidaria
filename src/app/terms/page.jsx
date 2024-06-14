@@ -15,18 +15,19 @@ const page = () => {
           height={30}
         />
       </div>
-      <h2 className={css.title}>Quiénes somos</h2>
+      <h2 className={css.title}><span>Quiénes</span> somos</h2>
       <p>
         La dirección de nuestra web es:
         <Link
           href={"http://solidariatv.com.ar"}
           target="_blank"
           aria-label="Ir a la Inicio Página"
+          className={css.link}
         >
           http://solidariatv.com.ar
         </Link>
       </p>
-      <h2 className={css.title}>Comentarios</h2>
+      <h2 className={css.title}>Come<span>ntar</span>ios</h2>
       <p>
         Cuando los visitantes dejan comentarios en la web, recopilamos los datos
         que se muestran en el formulario de comentarios, así como la dirección
@@ -40,13 +41,14 @@ const page = () => {
           aria-label="Ir a la política de privacidad del servicio Gravatar"
           href={"https://automattic.com/privacy/"}
           target="_blank"
+          className={css.link}
         >
           https://automattic.com/privacy/
         </Link>
         . Después de la aprobación de tu comentario, la imagen de tu perfil es
         visible para el público en el contexto de tu comentario.
       </p>
-      <h2 className={css.title}>Medios</h2>
+      <h2 className={css.title}>M<span>ed</span>ios</h2>
       <p>
         Si subes imágenes a la web, deberías evitar subir imágenes con datos de
         ubicación (GPS EXIF) incluidos. Los visitantes de la web pueden
@@ -77,7 +79,7 @@ const page = () => {
         navegador. Esta cookie no incluye datos personales y simplemente indica
         el ID del artículo que acabas de editar. Caduca después de 1 día.
       </p>
-      <h2 className={css.title}>Contenido incrustado de otros sitios web</h2>
+      <h2 className={css.title}>Contenido <span>incrustado de</span> otros sitios web</h2>
       <p>
         Los artículos de este sitio pueden incluir contenido incrustado (por
         ejemplo, vídeos, imágenes, artículos, etc.). El contenido incrustado de
@@ -91,12 +93,12 @@ const page = () => {
         el contenido incrustado si tienes una cuenta y estás conectado a esa
         web.
       </p>
-      <h2 className={css.title}>Con quién compartimos tus datos</h2>
+      <h2 className={css.title}>Con quién <span>compartimos</span> tus datos</h2>
       <p>
         Si solicitas un restablecimiento de contraseña, tu dirección IP será
         incluida en el correo electrónico de restablecimiento.
       </p>
-      <h2 className={css.title}>Cuánto tiempo conservamos tus datos</h2>
+      <h2 className={css.title}>Cuánto tiempo <span>conservamos</span> tus datos</h2>
       <p>
         Si dejas un comentario, el comentario y sus metadatos se conservan
         indefinidamente. Esto es para que podamos reconocer y aprobar
@@ -111,7 +113,7 @@ const page = () => {
         de usuario). Los administradores de la web también pueden ver y editar
         esa información.
       </p>
-      <h2 className={css.title}>Qué derechos tienes sobre tus datos</h2>
+      <h2 className={css.title}>Qué <span>derechos tienes</span> sobre tus datos</h2>
       <p>
         Si tienes una cuenta o has dejado comentarios en esta web, puedes
         solicitar recibir un archivo de exportación de los datos personales que
@@ -120,7 +122,7 @@ const page = () => {
         tengamos sobre ti. Esto no incluye ningún dato que estemos obligados a
         conservar con fines administrativos, legales o de seguridad.
       </p>
-      <h2 className={css.title}>Dónde se envían tus datos</h2>
+      <h2 className={css.title}>Dónde <span>se envían</span> tus datos</h2>
       <p>
         Los comentarios de los visitantes puede que los revise un servicio de
         detección automática de spam.

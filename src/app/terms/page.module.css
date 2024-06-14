@@ -22,3 +22,8 @@
   padding-bottom: 20px;
   border-bottom: 1px solid var(--copy-color);
 }
+
+.title span,
+.link {
+  color: var(--tv-color);
+}

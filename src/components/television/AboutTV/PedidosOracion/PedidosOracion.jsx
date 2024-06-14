@@ -6,7 +6,7 @@ import css from "./PedidosOracion.module.css";
 const PedidosOracion = () => {
   return (
     <div className={css.container}>
-      <h3>Pedidos De Oración</h3>
+      <h3><span className={css.accent}>Pedidos De</span> Oración</h3>
       <p>
         Como grupo de intercesores, nos comprometemos a mantener la
         confidencialidad de cada petición y a orar fervientemente por ellas.
@@ -24,7 +24,7 @@ const PedidosOracion = () => {
           siguiente formulario.
         </Link>
       </p>
-      <h4><q>Porque donde están dos o tres reunidos en mi nombre, allí estoy yo en medio de ellos.</q> Mateo 18:20</h4>
+      <h4><q>Porque donde están dos o tres reunidos en mi nombre, allí estoy yo en medio de ellos.</q> <span className={css.accent}>Mateo 18:20</span></h4>
       <Image src={'/images/solidariaTV/pedidos.webp'} alt="Pedidos de Oración" width={375} height={250} className={css.image}/>
     </div>
   );
