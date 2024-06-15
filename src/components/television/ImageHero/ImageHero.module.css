@@ -1,13 +1,20 @@
 .imageBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imageBox img {
-    object-fit: contain;
-    width: 100%;
-    max-width: 345px;
-    height: auto;
-    object-fit: cover;
+  object-fit: contain;
+  width: 100%;
+  max-width: 345px;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .imageBox img {
+    max-width: 460px;
+    width: 460px;
+  }
 }

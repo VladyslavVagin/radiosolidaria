@@ -11,20 +11,26 @@
   cursor: pointer;
 }
 
+.title {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.title span {
+  color: var(--tv-color);
+}
+
 @media screen and (min-width: 768px) {
   .list {
     max-width: 768px;
     gap: 20px;
   }
+}
 
-  .title {
-    font-size: 24px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .title span {
-    color: var(--tv-color);
+@media screen and (min-width: 1200px) {
+  .list {
+    max-width: 1200px;
   }
 }

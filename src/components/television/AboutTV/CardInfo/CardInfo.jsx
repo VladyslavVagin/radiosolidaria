@@ -7,6 +7,8 @@ import css from "./CardInfo.module.css";
 const CardInfo = ({ card, setContentName, contentName }) => {
   const is767 = useMediaQuery({ maxWidth: 767.98 });
   const is768 = useMediaQuery({ minWidth: 768 });
+  const is1199 = useMediaQuery({ maxWidth: 1199.98 });
+  const is1200 = useMediaQuery({ minWidth: 1200 });
 
   const handleClick = () => {
     if (contentName !== card.title) {
@@ -28,8 +30,8 @@ const CardInfo = ({ card, setContentName, contentName }) => {
         <Image
           src={card.image}
           alt={card.title}
-          width={is767 ? 160 : is768 ? 350 : 132}
-          height={is768 ? 200 : 100}
+          width={is767 ? 160 : (is768 && is1199 ? 350 : (is1200 ? 250 : 132))}
+          height={is768 && is1199 ? 200 : (is1200 ? 150 : 100)}
           className={css.imageCard}
         />
       </div>

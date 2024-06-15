@@ -27,11 +27,34 @@
 }
 
 .image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .accent {
-    color: var(--tv-color);
+  color: var(--tv-color);
+}
+
+@media screen and (min-width: 768px) {
+  .container h3 {
+    font-size: 24px;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .content > div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content > div {
+    width: 58%;
+  }
 }

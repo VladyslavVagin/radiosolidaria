@@ -1,26 +1,27 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import css from "./SolidariaTV.module.css";
 
-const CharlasBiblicas = () => {
-  const pathname = usePathname();
+const SolidariaTV = ({ canalVideo }) => {
   const [videosURL, setVideoURL] = useState(null);
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    if (pathname === "/tv/solidaria-tv") {
+    if (canalVideo === "Solidaria TV") {
       setVideoURL("/youtube/solidariaTV/SolidariaTV/videos.json");
-    } else if (pathname === "/tv/kids") {
+    } else if (canalVideo === "Solidaria TV Kids") {
       setVideoURL("/youtube/solidariaTV/Kids/videos.json");
-    } else if (pathname === "/tv/miguel-diez") {
+    } else if (canalVideo === "Miguel Díez") {
       setVideoURL("/youtube/solidariaTV/MiguelDiez/videos.json");
-    } else if (pathname === "/tv/ramon-ubillos") {
+    } else if (canalVideo === "Ramóon Ubillos") {
       setVideoURL("/youtube/solidariaTV/RamoonUbillos/videos.json");
+    } else {
+      setVideoURL(null);
+      setVideos([]);
     }
-  }, [pathname]);
+  }, [canalVideo]);
 
   useEffect(() => {
     if (videosURL === null) {
@@ -51,16 +52,22 @@ const CharlasBiblicas = () => {
           </div>
         </div>
       ))}
-      <Link
-        href={pathname === '/tv/kids' ? 'https://www.youtube.com/@SolidariaKids/videos' : "https://www.youtube.com/channel/UC7746OINwIay25Xz1ByfYZw"}
-        target="_blank"
-        aria-label="Ir a Youtube canal de Radio Solidaria"
-        className={css.link}
-      >
-        Ver <span>TODOS</span> los videos
-      </Link>
+      {canalVideo !== null && (
+        <Link
+          href={
+            canalVideo === "Solidaria TV Kids"
+              ? "https://www.youtube.com/@SolidariaKids/videos"
+              : "https://www.youtube.com/channel/UC7746OINwIay25Xz1ByfYZw"
+          }
+          target="_blank"
+          aria-label="Ir a Youtube canal de Radio Solidaria"
+          className={css.link}
+        >
+          Ver <span>&nbsp;TODOS&nbsp;</span> los videos
+        </Link>
+      )}
     </div>
   );
 };
 
-export default CharlasBiblicas;
+export default SolidariaTV;

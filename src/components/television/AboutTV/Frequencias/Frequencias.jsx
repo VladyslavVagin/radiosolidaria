@@ -7,9 +7,9 @@ import css from "./Frequencias.module.css";
 const Frequencias = () => {
   return (
     <div className={css.container}>
-      <ul>
+      <ul className={css.list}>
         {frequencias?.map((item, index) => (
-          <li key={index}>
+          <li key={index} className={css.listItem}>
             <p className={css.text}>
               <strong>{item.place} </strong>
               {item.freq}

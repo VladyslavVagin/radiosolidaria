@@ -26,3 +26,37 @@
   .videoContainer {
     border-radius: 20px;
   }
+
+  @media screen and (min-width: 768px){
+    .videoContainer {
+      width: 350px;
+    }
+
+    .videosContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .link {
+      margin-top: 0;
+      background-color: var(--white-color);
+      color: var(--tv-color);
+      width: 338px;
+      height: 198px;
+      border: 1px solid var(--tv-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: var(--hover-effect);
+    }
+  
+    .link:hover {
+      background-color: var(--tv-color);
+      color: var(--white-color);
+    }
+  }
