@@ -10,7 +10,8 @@ import css from "./ButtonsYoutube.module.css";
 
 const ButtonsYoutube = () => {
   const pathname = usePathname();
-  const is375 = useMediaQuery({ minWidth: 375 });
+  const is767 = useMediaQuery({ maxWidth: 767.98 });
+  const is768 = useMediaQuery({ minWidth: 768 });
 
   return (
     <div className={css.listLinks}>
@@ -32,8 +33,8 @@ const ButtonsYoutube = () => {
               <Image
                 src={btn.img}
                 alt={btn.name}
-                width={is375 ? 160 : 132}
-                height={100}
+                width={is767 ? 160 : (is768 ? 350 : 132)}
+                height={is768 ? 200 : 100}
                 className={css.imageCard}
               />
             </div>

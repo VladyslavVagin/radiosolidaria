@@ -42,3 +42,18 @@
     margin-top: 10px;
     border-radius: 12px;
 }
+
+@media screen and (min-width: 768px) {
+    .videoContainer {
+        width: 400px;
+        height: auto;
+    }
+
+    .tv {
+        margin-top: 20px;
+    }
+    
+    .video {
+        max-height: 240px;
+    }
+}

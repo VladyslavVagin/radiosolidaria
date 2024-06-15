@@ -10,8 +10,10 @@ import css from "./page.module.css";
 const layout = ({ children }) => {
   return (
     <div className={css.container}>
-      <ImageHero />
-      <VideoButtons />
+      <div className={css.heroContainer}>
+        <ImageHero />
+        <VideoButtons />
+      </div>
       <LastVideos />
       <Suspense fallback={<p>Loading...</p>}>{children}</Suspense>
       <AboutTV />

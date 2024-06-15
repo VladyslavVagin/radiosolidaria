@@ -40,7 +40,7 @@ const VideoButtons = () => {
   };
 
   return (
-    <>
+    <div className={css.tv}>
       <div className={css.buttonsContainer}>
         <button
           type="button"
@@ -64,7 +64,7 @@ const VideoButtons = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-    </>
+    </div>
   );
 };
 

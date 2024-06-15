@@ -1,11 +1,12 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import css from "./CardInfo.module.css";
 
 const CardInfo = ({ card, setContentName, contentName }) => {
-  const is375 = useMediaQuery({ minWidth: 375 });
+  const is767 = useMediaQuery({ maxWidth: 767.98 });
+  const is768 = useMediaQuery({ minWidth: 768 });
 
   const handleClick = () => {
     if (contentName !== card.title) {
@@ -27,8 +28,8 @@ const CardInfo = ({ card, setContentName, contentName }) => {
         <Image
           src={card.image}
           alt={card.title}
-          width={is375 ? 160 : 132}
-          height={100}
+          width={is767 ? 160 : is768 ? 350 : 132}
+          height={is768 ? 200 : 100}
           className={css.imageCard}
         />
       </div>
