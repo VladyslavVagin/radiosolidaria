@@ -1,12 +1,13 @@
 .header {
-  max-width: 768px;
-  margin: 0 auto;
+  max-width: 100%;
   -webkit-box-shadow: 0px 4px 12px 0px rgb(201, 124, 24);
   -moz-box-shadow: 0px 4px 12px 0px rgb(201, 124, 24);
   box-shadow: 0px 4px 12px 0px rgb(201, 124, 24);
 }
 
 .container {
+  max-width: 768px;
+  margin: 0 auto;
   padding: 0 15px;
   width: 100%;
   display: flex;
@@ -15,12 +16,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    max-width: 1200px;
-  }
-
   .container {
     justify-content: flex-start;
-    column-gap: 14%;
+    column-gap: 8%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    column-gap: 20%;
   }
 }

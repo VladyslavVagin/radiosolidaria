@@ -10,7 +10,7 @@ const AudioRadio = ({ url }) => {
 const [status, setStatus] = useState('pause');
 
   return (
-    <>
+    <div className={css.containerPlayer}>
       <AudioPlayer
         autoPlay
         src={url}
@@ -29,7 +29,7 @@ const [status, setStatus] = useState('pause');
         on
         onPause={() => setStatus('pause')}
       />
-    </>
+    </div>
   );
 };
 

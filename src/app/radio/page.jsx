@@ -1,19 +1,25 @@
-'use client';
+"use client";
 
 import ImageHero from "@/components/radio/ImageHero/ImageHero";
 import AudioRadio from "@/components/radio/Audio/AudioRadio";
 import Descripcion from "@/components/radio/Descripcion/Descripcion";
 import LastVideos from "@/components/radio/LastVideos/LastVideos";
-import css from './page.module.css';
+import DesktopImg from "@/components/radio/DesktopImg/DesktopImg";
+import css from "./page.module.css";
 
 const page = () => {
   return (
     <section className={css.section}>
       <div className={css.container}>
-        <ImageHero />
-        <AudioRadio url="http://master.shoutcast.com:8000/radiosolidaria" />
-        <LastVideos />
-        <Descripcion />
+        <div className={css.heroContainer}>
+          <ImageHero />
+          <AudioRadio url="http://master.shoutcast.com:8000/radiosolidaria" />
+          <DesktopImg />
+        </div>
+        <div className={css.contentContainer}>
+          <LastVideos />
+          <Descripcion />
+        </div>
       </div>
     </section>
   );

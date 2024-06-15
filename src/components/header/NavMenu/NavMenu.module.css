@@ -2,10 +2,9 @@
 .listMenu {
     display: flex;
     align-items: center;
-    column-gap: 44px;
+    column-gap: 24px;
 }
 
-.activeItem,
 .listItem {
     color: var(--tv-color);
     display: flex;
@@ -14,15 +13,16 @@
     position: relative;
 }
 
-.activeItem::after,
-.listItem::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background: var(--tv-color);
-    transition: width 0.3s ease-in-out;
+.activeItem {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.activeItem a {
+    background-color: var(--tv-color);
 }
 
 .listItem::after {
@@ -31,4 +31,10 @@
 
 .activeItem::after {
     width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .listMenu {
+        column-gap: 44px;
+    }
 }

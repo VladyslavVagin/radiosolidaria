@@ -14,7 +14,7 @@ const Logo = () => {
       <Image
         src="/images/logo/logo-solidaria-tv.webp"
         alt="Logo de Solidaria Media"
-        width={is768 ? 170 : 112}
+        width={is768 ? 190 : 112}
         height={is768 ? 108 : 70}
       />
     </Link>

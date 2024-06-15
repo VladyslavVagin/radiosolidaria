@@ -10,7 +10,7 @@ const Descripcion = () => {
 const [showMore, setShowMore] = useState(false);
 
   return (
-    <div>
+    <div className={css.container}>
       <h2 className={css.title}>Sobre <span className={css.accent}>Radio Solidaria</span></h2>
       <p onClick={() => setShowMore(false)} className={css.text}>
         <strong>Radio Solidaria</strong> es un medio de comunicación por medio del cual la ONG

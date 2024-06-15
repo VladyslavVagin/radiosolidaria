@@ -1,5 +1,25 @@
 .label {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--radio-red);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--radio-red);
+  width: 100%;
+  max-width: 270px;
+}
+
+.containerPlayer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .containerPlayer {
+    max-width: 480px;
+  }
+
+  .label {
+    width: 360px;
+    max-width: 360px;
+    padding-left: 20px;
+    font-size: 32px;
+  }
 }
