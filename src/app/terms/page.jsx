@@ -55,7 +55,7 @@ const page = () => {
         descargar y extraer cualquier dato de ubicación de las imágenes de la
         web.
       </p>
-      <h2 className={css.title}>Cookies</h2>
+      <h2 className={css.title}>C<span>oo</span>kies</h2>
       <p>
         Si dejas un comentario en nuestro sitio puedes elegir guardar tu nombre,
         dirección de correo electrónico y web en cookies. Esto es para tu

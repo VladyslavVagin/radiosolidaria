@@ -1,0 +1,13 @@
+.loaderContainer {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+    .loaderContainer {
+        max-width: 250px;
+    }
+}

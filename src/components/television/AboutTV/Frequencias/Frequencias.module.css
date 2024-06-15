@@ -8,4 +8,9 @@
   padding: 4px;
   margin-top: 8px;
   font-size: 14px;
+  color: var(--radio-red);
+}
+
+.text strong {
+  color: var(--tv-color);
 }
