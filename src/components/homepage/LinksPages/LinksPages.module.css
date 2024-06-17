@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.linkBoxRadio,
+.linkBoxTV {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e0e0e0;
+  box-shadow: 11px 11px 20px #a6a6a6, -11px -11px 20px #ffffff;
+}
+
+.linkBoxRadio {
+  border: 1px solid var(--radio-red);
+}
+
+.linkBoxTV {
+  border: 1px solid var(--tv-color);
+}
+
+.titleRadio,
+.titleTV {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.titleRadio {
+  color: var(--radio-red);
+}
+
+.titleTV {
+  color: var(--tv-color);
+}
+
+.linkItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    position: relative;
+    column-gap: 60px;
+    z-index: 10;
+  }
+
+  .linkBoxRadio,
+  .linkBoxTV {
+    width: 300px;
+    height: 300px;
+  }
+
+  .titleRadio,
+  .titleTV {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .container {
+    width: 660px;
+  }
+}
