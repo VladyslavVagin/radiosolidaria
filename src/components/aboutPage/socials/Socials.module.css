@@ -1,0 +1,15 @@
+.icon {
+  width: 62px;
+  height: 62px;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.cardinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
