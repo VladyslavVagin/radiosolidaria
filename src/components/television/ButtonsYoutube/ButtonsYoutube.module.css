@@ -21,6 +21,7 @@
 .imageWrapper {
   position: relative;
   display: inline-block;
+  animation: appearDown 1.4s ease;
 }
 
 .imageWrapper::after {
@@ -120,4 +121,16 @@
   .cardContainer {
     max-height: 150px;
   }
+}
+
+@keyframes appearDown {
+  0% {
+      opacity: 0;
+      transform: translateY(200px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  
 }
