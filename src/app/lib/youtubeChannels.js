@@ -19,7 +19,7 @@ export const youtubeChannels = [
         id: '3',
         title: 'YouTube Pastor Miguel Diez',
         url: 'https://www.youtube.com/@PastorMiguelDiez',
-        text: 'Pastor Miguel Diez',
+        text: 'Miguel Diez',
         info: 'Canal oficial del Pastor Miguel Diez',
         icon: 'icon-youtube'
     },

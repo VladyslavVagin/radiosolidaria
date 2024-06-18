@@ -67,6 +67,6 @@
 
 @media screen and (min-width: 1200px) {
   .socialContainer:hover {
-    box-shadow: 10px 10px 30px #b35d0b, -10px -10px 30px #f37d0f;
+    box-shadow: 10px 10px 30px rgb(4, 122, 30), -10px -10px 30px rgb(4, 122, 30);
   }
 }

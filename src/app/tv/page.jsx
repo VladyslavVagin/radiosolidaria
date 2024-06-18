@@ -6,16 +6,16 @@ import css from "./page.module.css";
 
 const page = () => {
   return (
-    <section>
-      <div className={css.container}>
-        <div className={css.heroContainer}>
-          <ImageHero />
-          <VideoButtons />
+      <section>
+        <div className={css.container}>
+          <div className={css.heroContainer}>
+            <ImageHero />
+            <VideoButtons />
+          </div>
+          <LastVideos />
+          <AboutTV />
         </div>
-        <LastVideos />
-        <AboutTV />
-      </div>
-    </section>
+      </section>
   );
 };
 
