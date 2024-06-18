@@ -17,14 +17,17 @@
   border-radius: 50%;
   background: #e0e0e0;
   box-shadow: 11px 11px 20px #a6a6a6, -11px -11px 20px #ffffff;
+  transition: var(--hover-effect);
 }
 
 .linkBoxRadio {
   border: 1px solid var(--radio-red);
+  animation: appearLeftRotate 1s ease;
 }
 
 .linkBoxTV {
-  border: 1px solid var(--tv-color);
+  border: 1px solid var(--television-color);
+  animation: appearRightRotate 1s ease;
 }
 
 .titleRadio,
@@ -36,10 +39,12 @@
 
 .titleRadio {
   color: var(--radio-red);
+  animation: appearLeft 1.4s ease;
 }
 
 .titleTV {
-  color: var(--tv-color);
+  color: var(--television-color);
+  animation: appearRight 1.4s ease;
 }
 
 .linkItem {
@@ -68,8 +73,58 @@
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .container {
     width: 660px;
+  }
+
+  .linkBoxRadio:hover,
+  .linkBoxTV:hover {
+    box-shadow: 11px 11px 20px #01bb55af, -11px -11px 20px #01bb55af;
+    background: var(--white-color);
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearLeftRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) rotate(-180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes appearRightRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
   }
 }

@@ -1,8 +1,9 @@
 .header {
   max-width: 100%;
-  -webkit-box-shadow: 0px 4px 12px 0px rgb(201, 124, 24);
-  -moz-box-shadow: 0px 4px 12px 0px rgb(201, 124, 24);
-  box-shadow: 0px 4px 12px 0px rgb(201, 124, 24);
+  -webkit-box-shadow: 0px 4px 12px 0px rgb(63, 134, 49);
+  -moz-box-shadow: 0px 4px 12px 0px rgb(63, 134, 49);
+
+  box-shadow: 0px 4px 12px 0px rgb(63, 134, 49);
 }
 
 .container {

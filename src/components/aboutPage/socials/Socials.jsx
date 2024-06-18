@@ -7,7 +7,7 @@ const Socials = ({ social }) => {
     <li className={css.card}>
       <Link className={css.cardinfo} href={social.url} target="_blank">
         <Icon name={social.icon} className={css.icon} />
-        <div>
+        <div className={css.description}>
           <h2 className={css.title}>{social.text}</h2>
           <p>{social.info}</p>
         </div>

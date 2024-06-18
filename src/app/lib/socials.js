@@ -17,14 +17,6 @@ export const socials = [
     },
     {
         id: '3',
-        title: 'YouTube',
-        url: 'https://www.youtube.com/solidariatvoficial',
-        text: 'Sana Doctrina Bíblica',
-        info: 'Más de 250 mil suscriptores',
-        icon: 'icon-youtube'
-    }, 
-    {
-        id: '4',
         title: 'Tik-Tok',
         url: 'https://www.tiktok.com/@solidariatv',
         text: 'Videos cortos edificantes',
@@ -32,7 +24,7 @@ export const socials = [
         icon: 'icon-tiktok'
     }, 
     {
-        id: '5',
+        id: '4',
         title: 'Spotify',
         url: 'https://open.spotify.com/show/4lKpvE37rIFfUq4uvou0Pz?si=ca88dd2858d8437a&nd=1&dlsi=9041a85fe79c495b',
         text: 'Conocer nuestras podcasts',

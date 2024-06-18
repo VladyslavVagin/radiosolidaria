@@ -17,7 +17,7 @@ const Hero = () => {
         <h1>
           ¡Bienvenido! <br />{" "}
           <span className={css.accent}>
-            Elige qué <strong>vas a hacer</strong> hoy
+            <span className={css.radioAccent}>Elige</span> qué <strong>vas a hacer</strong> hoy
           </span>
         </h1>
       </div>

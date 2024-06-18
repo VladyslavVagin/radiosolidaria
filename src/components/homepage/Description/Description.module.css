@@ -1,6 +1,7 @@
 .titleRadio,
 .titleTV {
   font-size: 18px;
+  animation: appearDown 800ms ease;
 }
 
 .titleTV {
@@ -12,13 +13,14 @@
 }
 
 .titleTV span {
-    color: var(--tv-color);
+    color: var(--television-color);
 }
 
 .text {
     text-align: justify;
     margin-bottom: 12px;
     margin-top: 12px;
+    animation: appearRight 1.8s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -46,5 +48,27 @@
 
     .desc {
         width: 100%;
+    }
+}
+
+@keyframes appearDown {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appearRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
