@@ -9,6 +9,7 @@
   font-size: 20px;
   text-align: center;
   margin: 20px 0;
+  animation: appearLeft 1.4s ease;
 }
 
 .title span {
@@ -29,4 +30,16 @@
   .container {
     max-width: 1200px;
   }
+}
+
+@keyframes appearLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(200px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  
 }

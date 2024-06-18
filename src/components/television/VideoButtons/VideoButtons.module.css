@@ -37,7 +37,6 @@
 .videoContainer {
     width: 100%;
     height: auto;
-    animation: appearDown 1.4s ease;
 }
 
 .video {
@@ -91,18 +90,5 @@
     100% {
         opacity: 1;
         transform: translateX(0);
-    }
-    
-}
-
-@keyframes appearDown {
-    0% {
-        opacity: 0;
-        transform: translateY(200px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    
+    }  
 }

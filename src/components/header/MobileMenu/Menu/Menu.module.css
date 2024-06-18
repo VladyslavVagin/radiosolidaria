@@ -14,7 +14,7 @@
     z-index: 998;
     margin: 0;
     padding-top: 20px;
-    animation: appearRight 1.4s ease;
+    animation: appearRight 800ms ease;
 }
 
 .item {
