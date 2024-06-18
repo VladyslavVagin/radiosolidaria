@@ -9,6 +9,7 @@
 .containerPlayer {
   max-width: 400px;
   margin: 0 auto;
+  animation: appearDown 1.4s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -22,4 +23,16 @@
     padding-left: 20px;
     font-size: 32px;
   }
+}
+
+@keyframes appearDown {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 }
