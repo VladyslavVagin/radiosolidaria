@@ -1,25 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { getVideosYoutube } from "@/redux/video/operations";
+import { useVideos } from "@/app/hooks/useVideos";
 import Link from "next/link";
 import css from "./SolidariaTV.module.css";
 
 const SolidariaTV = ({ canalVideo }) => {
+  const dispatch = useDispatch();
   const [videosURL, setVideoURL] = useState(null);
-  const [videos, setVideos] = useState([]);
+  const { videosYoutube } = useVideos();
 
   useEffect(() => {
     if (canalVideo === "Solidaria TV") {
-      setVideoURL("/youtube/solidariaTV/SolidariaTV/videos.json");
+      setVideoURL("tv");
     } else if (canalVideo === "Solidaria TV Kids") {
-      setVideoURL("/youtube/solidariaTV/Kids/videos.json");
+      setVideoURL("kids");
     } else if (canalVideo === "Miguel Díez") {
-      setVideoURL("/youtube/solidariaTV/MiguelDiez/videos.json");
+      setVideoURL("miguel");
     } else if (canalVideo === "Ramóon Ubillos") {
-      setVideoURL("/youtube/solidariaTV/RamoonUbillos/videos.json");
+      setVideoURL("ramon");
     } else {
       setVideoURL(null);
-      setVideos([]);
     }
   }, [canalVideo]);
 
@@ -27,15 +30,13 @@ const SolidariaTV = ({ canalVideo }) => {
     if (videosURL === null) {
       return;
     } else {
-      fetch(videosURL)
-        .then((response) => response.json())
-        .then((data) => setVideos(data.videos));
+      dispatch(getVideosYoutube(videosURL));
     }
   }, [videosURL]);
 
   return (
     <div className={css.videosContainer}>
-      {videos.map((video) => (
+      {videosURL && videosYoutube?.map((video) => (
         <div key={video._id}>
           <div>
             <iframe

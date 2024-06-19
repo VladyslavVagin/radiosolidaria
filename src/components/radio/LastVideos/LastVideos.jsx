@@ -1,14 +1,18 @@
-import { useEffect, useState } from "react";
+'use client';
+
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { useVideos } from "@/app/hooks/useVideos";
+import { getVideosRadio } from "@/redux/video/operations";
 import Link from "next/link";
 import css from "./LastVideos.module.css";
 
 const LastVideos = () => {
-  const [videos, setVideos] = useState([]);
+  const dispatch = useDispatch();
+  const { videosRadio } = useVideos();
 
   useEffect(() => {
-    fetch("/youtube/radioSolidaria/videos.json")
-      .then((response) => response.json())
-      .then((data) => setVideos(data.videos));
+    dispatch(getVideosRadio());
   }, []);
 
   return (
@@ -17,7 +21,7 @@ const LastVideos = () => {
         Las últimas videos de <span>Youtube</span> canal
       </h2>
       <div className={css.listVideo}>
-        {videos.map((video) => (
+        {videosRadio?.map((video) => (
           <div key={video._id}>
             <div>
               <iframe
