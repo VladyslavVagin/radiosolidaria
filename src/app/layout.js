@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from "@/redux/store";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Loader from "@/components/Loader/Loader";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
@@ -95,7 +96,7 @@ export default function RootLayout({ children }) {
         <body>
           <Header />
           <main>
-            <Suspense fallback={<p>Loading...</p>}>{children}</Suspense>
+            <Suspense fallback={<Loader/>}>{children}</Suspense>
           </main>
           <Footer />
         </body>

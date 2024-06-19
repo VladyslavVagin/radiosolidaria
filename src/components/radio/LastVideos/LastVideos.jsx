@@ -4,12 +4,13 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useVideos } from "@/app/hooks/useVideos";
 import { getVideosRadio } from "@/redux/video/operations";
+import Loader from "@/components/Loader/Loader";
 import Link from "next/link";
 import css from "./LastVideos.module.css";
 
 const LastVideos = () => {
   const dispatch = useDispatch();
-  const { videosRadio } = useVideos();
+  const { videosRadio, isLoading } = useVideos();
 
   useEffect(() => {
     dispatch(getVideosRadio());
@@ -20,7 +21,7 @@ const LastVideos = () => {
       <h2 className={css.title}>
         Las últimas videos de <span>Youtube</span> canal
       </h2>
-      <div className={css.listVideo}>
+      {isLoading ? <Loader /> : <div className={css.listVideo}>
         {videosRadio?.map((video) => (
           <div key={video._id}>
             <div>
@@ -46,7 +47,7 @@ const LastVideos = () => {
         >
           Ver&nbsp;<span>TODOS</span>&nbsp;los videos
         </Link>
-      </div>
+      </div>}
     </div>
   );
 };
