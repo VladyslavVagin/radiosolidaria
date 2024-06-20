@@ -2,22 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--accent-color);
+  padding: 10px 0;
+  margin-bottom: 30px;
   animation: appear 1.2s ease;
 }
 
 .imageBox img {
   object-fit: contain;
-  width: 100%;
-  max-width: 345px;
   height: auto;
-  object-fit: cover;
-}
-
-@media screen and (min-width: 1200px) {
-  .imageBox img {
-    max-width: 460px;
-    width: 460px;
-  }
 }
 
 @keyframes appear {

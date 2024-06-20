@@ -21,7 +21,7 @@
 }
 
 .link {
-  color: var(--tv-color);
+  color: var(--accent-color);
 }
 
 .link:hover,
@@ -34,10 +34,6 @@
   height: auto;
   margin-bottom: 20px;
   animation: appearDown 2.4s ease;
-}
-
-.accent {
-  color: var(--tv-color);
 }
 
 @media screen and (min-width: 768px) {

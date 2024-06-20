@@ -6,7 +6,7 @@ const QuienesSomos = () => {
   return (
     <div className={css.container}>
       <h3>
-        <span className={css.accent}>¿ Quienes</span> Somos ?
+       ¿ Quienes Somos ?
       </h3>
       <div className={css.content}>
         <div>

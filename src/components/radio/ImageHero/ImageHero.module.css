@@ -1,27 +1,17 @@
 .imageBox {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  animation: appear 1.2s ease;
+  row-gap: 20px;
+  padding: 10px 0;
+  background-color: var(--accent-color);
 }
 
 .imageBox img {
   object-fit: contain;
-  width: 100%;
-  max-width: 230px;
   height: auto;
-  object-fit: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .imageBox {
-    margin-bottom: 0;
-  }
-
-    .imageBox img {
-        width: 300px;
-    }
+  animation: appear 1.2s ease;
 }
 
 @keyframes appear {

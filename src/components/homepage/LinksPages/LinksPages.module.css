@@ -1,50 +1,58 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.linkBoxRadio,
-.linkBoxTV {
-  width: 140px;
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #e0e0e0;
-  box-shadow: 11px 11px 20px #a6a6a6, -11px -11px 20px #ffffff;
+.linkItem {
+  width: 100%;
+  height: 90px;
+  background: var(--accent-color);
   transition: var(--hover-effect);
 }
 
+.linkItem:first-of-type {
+  -webkit-box-shadow: 1px -2px 6px 2px rgba(43, 138, 119, 1);
+  -moz-box-shadow: 1px -2px 6px 2px rgba(43, 138, 119, 1);
+  box-shadow: 1px -2px 6px 2px rgba(43, 138, 119, 1);
+}
+
+.linkItem:last-of-type {
+  -webkit-box-shadow: 1px 2px 6px 2px rgba(43, 138, 119, 1);
+  -moz-box-shadow: 1px 2px 6px 2px rgba(43, 138, 119, 1);
+  box-shadow: 1px 2px 6px 2px rgba(43, 138, 119, 1);
+}
+
+.linkItem a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+  column-gap: 10px;
+}
+
 .linkBoxRadio {
-  border: 1px solid var(--radio-red);
   animation: appearLeftRotate 1s ease;
 }
 
 .linkBoxTV {
-  border: 1px solid var(--television-color);
   animation: appearRightRotate 1s ease;
 }
 
-.titleRadio,
-.titleTV {
+.title {
+  color: var(--white-color);
   font-size: 14px;
-  margin-bottom: 8px;
-  text-decoration: underline;
+  font-weight: 600;
 }
 
-.titleRadio {
-  color: var(--radio-red);
-  animation: appearLeft 1.4s ease;
-}
-
-.titleTV {
-  color: var(--television-color);
-  animation: appearRight 1.4s ease;
+.text {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .linkItem {
@@ -61,27 +69,15 @@
     z-index: 10;
   }
 
-  .linkBoxRadio,
-  .linkBoxTV {
-    width: 300px;
-    height: 300px;
-  }
-
-  .titleRadio,
-  .titleTV {
-    font-size: 28px;
+  .text,
+  .title {
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 660px;
-  }
-
-  .linkBoxRadio:hover,
-  .linkBoxTV:hover {
-    box-shadow: 11px 11px 20px #01bb55af, -11px -11px 20px #01bb55af;
-    background: var(--white-color);
   }
 }
 

@@ -10,11 +10,11 @@ import css from "./page.module.css";
 const page = () => {
   return (
     <section className={css.section}>
+      <ImageHero />
       <div className={css.container}>
         <div className={css.heroContainer}>
-          <ImageHero />
-          <AudioRadio url="http://master.shoutcast.com:8000/radiosolidaria" />
           <DesktopImg />
+          <AudioRadio url="http://master.shoutcast.com:8000/radiosolidaria" />
         </div>
         <div className={css.contentContainer}>
           <LastVideos />

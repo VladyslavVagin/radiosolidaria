@@ -7,10 +7,10 @@ const ImageHero = () => {
     <section>
       <div className={css.imageBox}>
         <Image
-          src={"/images/logo/logo-solidaria-tv.webp"}
+          src={"/images/logo/tv/logo-tv-notext.webp"}
           alt="Logo de Radio Solidaria"
-          width={380}
-          height={248}
+          width={150}
+          height={68}
         />
       </div>
     </section>

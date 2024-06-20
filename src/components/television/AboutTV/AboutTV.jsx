@@ -15,7 +15,7 @@ const AboutTV = () => {
   return (
     <div>
       <h2 className={css.title}>
-        Sobre <span>Solidaria</span> TV
+        Sobre Solidaria TV
       </h2>
       <ul className={css.list}>
         {cardsInfo?.map((card) => (

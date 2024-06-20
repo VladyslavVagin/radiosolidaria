@@ -6,7 +6,7 @@ const ImageHero = () => {
   return (
     <section>
       <div className={css.imageBox}>
-        <Image src={'/images/logo/logo-radio-solidaria.webp'} alt="Logo de Radio Solidaria" width={248} height={200}/>
+        <Image src={'/images/logo/radio/logo-radio-notext.webp'} alt="Logo de Radio Solidaria" width={120} height={72}/>
       </div>
     </section>
   );

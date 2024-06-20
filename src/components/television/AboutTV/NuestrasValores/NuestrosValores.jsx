@@ -6,7 +6,7 @@ const NuestrosValores = () => {
   return (
     <div className={css.container}>
       <h3>
-        <span className={css.accent}>Nuestros</span> Valores
+        Nuestros Valores
       </h3>
       <div className={css.content}>
         <ol className={css.list}>

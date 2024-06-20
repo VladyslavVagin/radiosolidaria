@@ -14,7 +14,7 @@
 .burger {
   width: 37px;
   height: 2px;
-  background-color: var(--tv-color);
+  background-color: var(--accent-color);
   transition: all 400ms ease;
 }
 
@@ -28,7 +28,7 @@
   margin-right: auto;
   width: 37px;
   height: 2px;
-  background-color: var(--tv-color);
+  background-color: var(--accent-color);
   transition: all 400ms ease;
 }
 

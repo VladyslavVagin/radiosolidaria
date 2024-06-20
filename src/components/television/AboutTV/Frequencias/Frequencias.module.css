@@ -3,17 +3,17 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 43px;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  background: var(--white-color);
+  box-shadow: 5px 5px 10px #3d7aa3, -5px -5px 10px #407d99;
   padding: 4px;
   margin-top: 8px;
   font-size: 14px;
-  color: var(--radio-red);
+  color: var(--dark-blue);
   animation: appearDown 1.4s ease;
 }
 
 .text strong {
-  color: var(--tv-color);
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px){

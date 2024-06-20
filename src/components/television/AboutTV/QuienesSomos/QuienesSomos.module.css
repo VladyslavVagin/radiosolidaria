@@ -21,10 +21,6 @@
     animation: appearDown 1.4s ease;
 }
 
-.accent {
-    color: var(--tv-color);
-}
-
 @media screen and (min-width: 768px) {
     .container h3 {
        font-size: 24px;

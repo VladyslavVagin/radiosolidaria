@@ -15,11 +15,9 @@ const Hero = () => {
       </div>
       <div className={css.hero}>
         <h1>
-          ¡Bienvenido! <br />{" "}
-          <span className={css.accent}>
-            <span className={css.radioAccent}>Elige</span> qué <strong>vas a hacer</strong> hoy
-          </span>
+          Bienvenido a<br />Solidaria Media
         </h1>
+        <p>Haz click en el enlace deseado</p>
       </div>
       <div className={css.imageTV}>
         <Image

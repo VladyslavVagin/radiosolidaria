@@ -7,7 +7,7 @@ const page = () => {
   return (
     <section>
       <div className={css.container}>
-        <h1 className={css.title}>Medios de <span>Comunicación</span> Bíblicas</h1>
+        <h1 className={css.title}>Medios de Comunicación Bíblicas</h1>
         <div>
           <ListSocials />
           <NuestrasYoutube />

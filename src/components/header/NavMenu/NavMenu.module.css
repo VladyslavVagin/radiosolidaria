@@ -6,7 +6,7 @@
 }
 
 .listItem {
-    color: var(--tv-color);
+    color: var(--accent-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 
 .activeItem a {
-    background-color: var(--tv-color);
+    background-color: var(--accent-color);
 }
 
 .listItem::after {

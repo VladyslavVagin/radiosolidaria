@@ -1,5 +1,6 @@
 .videosContainer {
   text-align: center;
+  width: 90%;
   max-width: 375px;
   margin: 0 auto;
 }
@@ -10,13 +11,9 @@
   animation: appearLeft 1.4s ease;
 }
 
-.title > span {
-  color: var(--radio-red);
-}
-
 .link {
   display: inline-block;
-  background-color: var(--radio-red);
+  background-color: var(--accent-color);
   padding: 6px 12px;
   margin-top: 12px;
   border-radius: 20px;

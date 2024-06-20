@@ -2,10 +2,12 @@
 
 :root {
   --hover-effect: all 400ms ease-in-out;
-  --primary-dark: #262626;
-  --footer-bg: rgb(49, 40, 40);
+  --primary-dark: #26282A;
+  --footer-bg: rgb(24, 21, 21);
   --white-color: #fff;
   --white-social: whitesmoke;
+  --dark-blue: #283644;
+  --accent-color: #5D9D9B;
   --copy-color: rgb(102, 102, 102);
   --radio-red: rgb(160, 35, 35);
   --tv-color: rgb(59, 153, 71);
@@ -16,7 +18,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: var(--white-color);
+  background-color: var(--primary-dark);
 }
 
 @font-face {

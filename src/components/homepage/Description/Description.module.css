@@ -1,25 +1,22 @@
-.titleRadio,
-.titleTV {
+.container {
+    background-color: var(--dark-blue);
+    margin-top: 40px;
+}
+
+.desc {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+.title {
   font-size: 18px;
+  font-weight: 600;
   animation: appearDown 800ms ease;
-}
-
-.titleTV {
-    margin-top: 20px;
-}
-
-.titleRadio span {
-    color: var(--radio-red);
-}
-
-.titleTV span {
-    color: var(--television-color);
 }
 
 .text {
     text-align: justify;
-    margin-bottom: 12px;
-    margin-top: 12px;
     animation: appearRight 1.8s ease;
 }
 

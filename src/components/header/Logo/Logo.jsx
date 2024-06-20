@@ -12,10 +12,10 @@ const Logo = () => {
   return (
     <Link href={"/"} className={css.logo}>
       <Image
-        src="/images/logo/solidaria-media-logo.webp"
+        src="/images/logo/logo-aquamarin.webp"
         alt="Logo de Solidaria Media"
-        width={is768 ? 140 : 96}
-        height={is768 ? 108 : 70}
+        width={is768 ? 140 : 66}
+        height={is768 ? 108 : 50}
       />
     </Link>
   );

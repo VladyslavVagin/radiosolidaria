@@ -7,7 +7,7 @@ import css from "./NuestrasYoutube.module.css";
 const NuestrasYoutube = () => {
   return (
     <div className={css.containerYoutube}>
-      <h2 className={css.title}>Nuestros <span>canales</span> de YouTube</h2>
+      <h2 className={css.title}>Nuestros canales de YouTube</h2>
       <ul className={css.list}>
         {youtubeChannels.map((ch) => (
           <Canal key={ch.id} ch={ch} />

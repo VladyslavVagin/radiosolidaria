@@ -8,10 +8,6 @@
   animation: appearRight 1.4s ease;
 }
 
-.title span {
-  color: var(--radio-red);
-}
-
 .list {
   display: flex;
   flex-direction: column;

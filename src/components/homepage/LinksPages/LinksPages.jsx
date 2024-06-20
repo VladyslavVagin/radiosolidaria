@@ -15,30 +15,32 @@ const LinksPages = () => {
   return (
     <div className={css.container}>
       <div className={css.linkItem}>
-        <h2 className={css.titleRadio}>Escuchar la radio</h2>
-        <div className={css.linkBoxRadio}>
-          <Link href={"/radio"} aria-label="Ir a la página Radio Solidaria">
-            <Image
-              src={"/images/logo/radio/radio.webp"}
-              alt="Logo de Radio Solidaria"
-              width={is768 && !is767 ? 220 : 100}
-              height={is768 && !is767 ? 186 : 86}
-            />
-          </Link>
-        </div>
+        <Link href={"/radio"} aria-label="Ir a la página Radio Solidaria">
+          <Image
+            src={"/images/logo/radio/logo-radio-notext.webp"}
+            alt="Logo de Radio Solidaria"
+            width={is768 && !is767 ? 120 : 80}
+            height={is768 && !is767 ? 86 : 66}
+          />
+          <div>
+            <h2 className={css.title}>Escuchar Radio Solidaria</h2>
+            <p className={css.text}>En vivo 24hs al día</p>
+          </div>
+        </Link>
       </div>
       <div className={css.linkItem}>
-        <h2 className={css.titleTV}>Ver la televisión</h2>
-        <div className={css.linkBoxTV}>
-          <Link href={"/tv"} aria-label="Ir a la página Solidaria TV">
-            <Image
-              src={"/images/logo/tv/logo-tv.webp"}
-              alt="Logo de Radio Solidaria"
-              width={is768 && !is767 ? 200 : (is1200 && !is1199 ? 170 : 92)}
-              height={is768 && !is767 ? 188 : (is1200 && !is1199 ? 158 : 88)}
-            />
-          </Link>
-        </div>
+        <Link href={"/tv"} aria-label="Ir a la página Solidaria TV">
+          <Image
+            src={"/images/logo/tv/logo-tv-notext.webp"}
+            alt="Logo de Radio Solidaria"
+            width={is768 && !is767 ? 100 : is1200 && !is1199 ? 70 : 80}
+            height={is768 && !is767 ? 88 : is1200 && !is1199 ? 58 : 66}
+          />
+          <div>
+            <h2 className={css.title}>Ver Solidaria TV</h2>
+            <p className={css.text}>En vivo 24hs al día</p>
+          </div>
+        </Link>
       </div>
     </div>
   );

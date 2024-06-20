@@ -1,8 +1,11 @@
 .buttonsContainer {
   width: 100%;
+  max-width: 375px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
   animation: appearLeft 1.4s ease;
 }
 
@@ -11,7 +14,7 @@
   border: none;
   outline: none;
   height: 44px;
-  background-color: var(--tv-color);
+  background-color: var(--accent-color);
   color: var(--white-color);
   border-radius: 20px;
   font-size: 14px;
@@ -25,20 +28,23 @@
   outline: none;
   height: 42px;
   background-color: var(--white-color);
-  color: var(--tv-color);
-  border: 1px solid var(--tv-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 20px;
   font-size: 14px;
   padding: 0 12px;
-  -webkit-box-shadow: 0px 2px 8px 0px rgb(4, 122, 30);
-  -moz-box-shadow: 0px 2px 8px 0px rgb(4, 122, 30);
-  box-shadow: 0px 2px 8px 0px rgb(4, 122, 30);
+  -webkit-box-shadow: -1px 0px 7px 0px rgba(37,196,196,1);
+  -moz-box-shadow: -1px 0px 7px 0px rgba(37,196,196,1);
+  box-shadow: -1px 0px 7px 0px rgba(37,196,196,1);
   transition: var(--hover-effect);
 }
 
 .videoContainer {
   width: 100%;
   height: auto;
+  max-width: 375px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .video {
@@ -50,21 +56,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .videoContainer {
-    width: 400px;
-    height: auto;
-  }
-
-  .tv {
-    margin-top: 20px;
-  }
-
-  .video {
-    max-height: 240px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .tv {
     display: flex;
     align-items: center;
@@ -76,21 +67,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 20px;
+    row-gap: 40px;
   }
 
   .videoContainer {
-    width: 500px;
+    width: 600px;
+    max-width: 100%;
+  }
+
+  .video {
+    max-height: 300px;
   }
 
   .activeButton:hover,
   .button:hover {
-    background-color: green;
+    background-color: var(--accent-color);
   }
 
     .activeButton:hover {
         color: var(--white-color);
     }
+}
+
+@media screen and (min-width: 1200px){
+  .videoContainer {
+    width: 1000px;
+  }
+
+  .video {
+    max-height: 600px;
+  }
 }
 
 @keyframes appearLeft {

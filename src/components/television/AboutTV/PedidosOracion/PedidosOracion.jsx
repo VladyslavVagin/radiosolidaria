@@ -7,7 +7,7 @@ const PedidosOracion = () => {
   return (
     <div className={css.container}>
       <h3>
-        <span className={css.accent}>Pedidos De</span> Oración
+       Pedidos De Oración
       </h3>
       <div className={css.content}>
         <div>
