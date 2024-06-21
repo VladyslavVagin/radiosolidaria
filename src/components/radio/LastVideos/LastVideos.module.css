@@ -1,4 +1,5 @@
 .videosContainer {
+  position: relative;
   text-align: center;
   width: 90%;
   max-width: 375px;
@@ -33,6 +34,10 @@
   animation: appearDown 1.4s ease;
 }
 
+.listVideo {
+  min-height: 1035px
+}
+
 @media screen and (min-width: 768px) {
   .videosContainer {
     max-width: 768px;
@@ -53,6 +58,7 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    min-height: 661px
   }
 
   .link {

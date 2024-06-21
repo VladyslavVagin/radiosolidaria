@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Icon from "@/components/Icon/Icon";
 import Hls from "hls.js";
 import css from "./VideoButtons.module.css";
 import Image from "next/image";
@@ -33,11 +34,19 @@ const VideoButtons = () => {
   }, [urlTv]);
 
   const handleSpainTV = () => {
-    setUrlTv(SpainTV);
+    if (urlTv === "" || urlTv === ArgentinaTV) {
+      setUrlTv(SpainTV);
+    } else {
+      setUrlTv("");
+    }
   };
 
   const handleArgentinaTV = () => {
-    setUrlTv(ArgentinaTV);
+    if (urlTv === "" || urlTv === SpainTV) {
+      setUrlTv(ArgentinaTV);
+    } else {
+      setUrlTv("");
+    }
   };
 
   return (
@@ -49,7 +58,11 @@ const VideoButtons = () => {
           className={urlTv === SpainTV ? css.activeButton : css.button}
           onClick={handleSpainTV}
         >
-          TV España
+          España&nbsp;&nbsp;
+          <Icon
+            name={urlTv !== "" && urlTv !== ArgentinaTV ? "icon-stop" : "icon-play"}
+            className={css.playIcon}
+          />
         </button>
         <button
           type="button"
@@ -57,7 +70,11 @@ const VideoButtons = () => {
           className={urlTv === ArgentinaTV ? css.activeButton : css.button}
           onClick={handleArgentinaTV}
         >
-          TV Argentina
+          Argentina{" "}
+          <Icon
+            name={urlTv !== "" && urlTv !== SpainTV  ? "icon-stop" : "icon-play"}
+            className={css.playIcon}
+          />
         </button>
       </div>
       <div className={css.videoContainer}>

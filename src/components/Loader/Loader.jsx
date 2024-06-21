@@ -6,8 +6,8 @@ const Loader = () => {
     <div className={css.backdrop}>
       <Watch
         visible={true}
-        height="80"
-        width="80"
+        height="100"
+        width="100"
         radius="48"
         color="var(--white-color)"
         ariaLabel="watch-loading"

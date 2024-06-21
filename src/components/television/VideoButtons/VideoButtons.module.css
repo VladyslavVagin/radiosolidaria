@@ -10,7 +10,7 @@
 }
 
 .button {
-  width: 118px;
+  width: 128px;
   border: none;
   outline: none;
   height: 44px;
@@ -20,10 +20,14 @@
   font-size: 14px;
   padding: 0 12px;
   transition: var(--hover-effect);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
 }
 
 .activeButton {
-  width: 118px;
+  width: 128px;
   border: none;
   outline: none;
   height: 42px;
@@ -37,6 +41,21 @@
   -moz-box-shadow: -1px 0px 7px 0px rgba(37, 196, 196, 1);
   box-shadow: -1px 0px 7px 0px rgba(37, 196, 196, 1);
   transition: var(--hover-effect);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.playIcon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+  transition: var(--hover-effect);
+}
+
+.activeButton .playIcon {
+  fill: var(--accent-color);
 }
 
 .videoContainer {
@@ -94,13 +113,25 @@
     max-height: 300px;
   }
 
-  .activeButton:hover,
-  .button:hover {
+  .activeButton:hover{
     background-color: var(--accent-color);
+  }
+
+  .button:hover {
+    background-color: var(--white-color);
+    color: var(--accent-color);
   }
 
   .activeButton:hover {
     color: var(--white-color);
+  }
+
+  .button:hover .playIcon {
+    fill: var(--accent-color);
+  }
+
+  .activeButton:hover .playIcon {
+    fill: var(--white-color);
   }
 }
 

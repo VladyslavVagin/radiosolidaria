@@ -58,6 +58,11 @@
   justify-content: center;
 }
 
+.imageTv,
+.imageRadio {
+  animation: appear 1.6s ease;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     position: relative;
@@ -157,5 +162,16 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }

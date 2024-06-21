@@ -16,14 +16,14 @@
   font-size: 94px;
   text-align: center;
   margin-top: 50%;
-  color: var(--tv-color);
+  color: var(--accent-color);
   letter-spacing: 0.08em;
 }
 
 .container h2 {
   font-size: 30px;
   text-align: center;
-  color: var(--tv-color);
+  color: var(--accent-color);
 }
 
 .link {
@@ -32,8 +32,8 @@
   justify-content: center;
   background: linear-gradient(
     0deg,
-    rgba(13, 68, 15, 1) 0%,
-    rgba(29, 171, 69, 1) 100%
+    rgb(24, 129, 129) 0%,
+    rgb(24, 129, 129) 100%
   );
   color: var(--white-color);
   margin-bottom: 100%;
@@ -41,9 +41,9 @@
   height: 60px;
   margin-top: 40px;
   font-weight: 600;
-  -webkit-box-shadow: 2px 4px 22px 0px rgba(53, 128, 9, 1);
-  -moz-box-shadow: 2px 4px 22px 0px rgba(53, 128, 9, 1);
-  box-shadow: 2px 4px 22px 0px rgba(53, 128, 9, 1);
+  -webkit-box-shadow: 2px 4px 22px 0px rgb(24, 129, 129);
+  -moz-box-shadow: 2px 4px 22px 0px rgb(24, 129, 129);
+  box-shadow: 2px 4px 22px 0px rgb(24, 129, 129);
   transition: var(--hover-effect);
 }
 

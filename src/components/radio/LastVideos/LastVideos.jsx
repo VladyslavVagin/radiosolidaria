@@ -1,10 +1,9 @@
-'use client';
+"use client";
 
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useVideos } from "@/app/hooks/useVideos";
 import { getVideosRadio } from "@/redux/video/operations";
-import Loader from "@/components/Loader/Loader";
 import Link from "next/link";
 import css from "./LastVideos.module.css";
 
@@ -18,10 +17,8 @@ const LastVideos = () => {
 
   return (
     <div className={css.videosContainer}>
-      <h2 className={css.title}>
-        Los últimos videos de Youtube
-      </h2>
-      {isLoading ? <Loader /> : <div className={css.listVideo}>
+      <h2 className={css.title}>Los últimos videos de Youtube</h2>
+      <div className={css.listVideo}>
         {videosRadio?.map((video) => (
           <div key={video._id}>
             <div>
@@ -47,7 +44,7 @@ const LastVideos = () => {
         >
           Ver&nbsp;<span>TODOS</span>&nbsp;los videos
         </Link>
-      </div>}
+      </div>
     </div>
   );
 };
