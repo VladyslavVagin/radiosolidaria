@@ -61,7 +61,7 @@ const VideoButtons = () => {
         </button>
       </div>
       <div className={css.videoContainer}>
-        <video controls muted className={css.video} ref={videoRef}>
+        <video controls autoPlay muted className={css.video} ref={videoRef}>
           Your browser does not support the video tag.
         </video>
         {urlTv === "" && (
