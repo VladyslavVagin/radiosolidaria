@@ -26,5 +26,5 @@
 
 .title span,
 .link {
-  color: var(--tv-color);
+  color: var(--accent-color);
 }

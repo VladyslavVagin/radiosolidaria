@@ -19,7 +19,7 @@ const LastVideos = () => {
   return (
     <div className={css.videosContainer}>
       <h2 className={css.title}>
-        Las últimas videos de Youtube canal
+        Los últimos videos de Youtube
       </h2>
       {isLoading ? <Loader /> : <div className={css.listVideo}>
         {videosRadio?.map((video) => (

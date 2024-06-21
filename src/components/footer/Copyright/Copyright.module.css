@@ -20,7 +20,7 @@
 }
 
 .linksBox a:hover {
-    color: var(--tv-color);
+    color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {

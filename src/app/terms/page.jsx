@@ -1,19 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import css from "./page.module.css";
-import Image from "next/image";
 
 const page = () => {
   return (
     <section className={css.container}>
       <div className={css.titleBox}>
         <h1 className={css.titleMain}>Política de privacidad</h1>
-        <Image
-          src="/images/privacidad/privacidad.png"
-          alt="Política de privacidad"
-          width={30}
-          height={30}
-        />
       </div>
       <h2 className={css.title}><span>Quiénes</span> somos</h2>
       <p>

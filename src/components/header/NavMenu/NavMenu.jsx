@@ -13,7 +13,7 @@ const pathname = usePathname();
     <div>
       <ul className={css.listMenu}>
         {links.map((link) => (
-          <li key={link.id} className={pathname === link.path ? css.activeItem : css.listItem}>
+          <li key={link.name} className={pathname === link.path ? css.activeItem : css.listItem}>
             <LinkHeader link={link} />
           </li>
         ))}

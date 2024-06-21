@@ -21,6 +21,7 @@ const LinksPages = () => {
             alt="Logo de Radio Solidaria"
             width={is768 && !is767 ? 120 : 80}
             height={is768 && !is767 ? 86 : 66}
+            className={css.imageRadio}
           />
           <div>
             <h2 className={css.title}>Escuchar Radio Solidaria</h2>
@@ -33,8 +34,9 @@ const LinksPages = () => {
           <Image
             src={"/images/logo/tv/logo-tv-notext.webp"}
             alt="Logo de Radio Solidaria"
-            width={is768 && !is767 ? 100 : is1200 && !is1199 ? 70 : 80}
-            height={is768 && !is767 ? 88 : is1200 && !is1199 ? 58 : 66}
+            width={is768 && !is767 ? 100 : is1200 && !is1199 ? 120 : 80}
+            height={is768 && !is767 ? 88 : is1200 && !is1199 ? 108 : 66}
+            className={css.imageTv}
           />
           <div>
             <h2 className={css.title}>Ver Solidaria TV</h2>

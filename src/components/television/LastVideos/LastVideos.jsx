@@ -11,7 +11,7 @@ const LastVideos = () => {
   return (
     <div className={css.container}>
       <h2 className={css.title}>
-        Las últimas videos de Youtube canal
+        Los últimos videos de Youtube
       </h2>
       <ButtonsYoutube setCanalVideo={setCanalVideo} canalVideo={canalVideo} />
       <SolidariaTV canalVideo={canalVideo} />

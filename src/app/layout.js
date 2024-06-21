@@ -1,11 +1,10 @@
 "use client";
 
-import { Suspense } from "react";
 import { Provider } from "react-redux";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import store from "@/redux/store";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import Loader from "@/components/Loader/Loader";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
@@ -96,7 +95,8 @@ export default function RootLayout({ children }) {
         <body>
           <Header />
           <main>
-            <Suspense fallback={<Loader/>}>{children}</Suspense>
+            {children}
+            <GoogleAnalytics gaId="G-Z30HXHH66P" />
           </main>
           <Footer />
         </body>

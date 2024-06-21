@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Hls from "hls.js";
 import css from "./VideoButtons.module.css";
+import Image from "next/image";
 
 const VideoButtons = () => {
   const videoRef = useRef(null);
@@ -10,7 +11,7 @@ const VideoButtons = () => {
     "https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8";
   const ArgentinaTV =
     "https://canadaremar2.todostreaming.es/live/argentina-web.m3u8";
-  const [urlTv, setUrlTv] = useState(SpainTV);
+  const [urlTv, setUrlTv] = useState("");
 
   useEffect(() => {
     const hls = new Hls();
@@ -60,9 +61,18 @@ const VideoButtons = () => {
         </button>
       </div>
       <div className={css.videoContainer}>
-        <video controls autoPlay muted className={css.video} ref={videoRef}>
+        <video controls muted className={css.video} ref={videoRef}>
           Your browser does not support the video tag.
         </video>
+        {urlTv === "" && (
+          <Image
+            src={"/images/solidariaTV/wrapperTV.webp"}
+            alt="Seleccione España o Argentina para ver"
+            layout="fill"
+            objectFit="cover"
+            className={css.wrapperVideo}
+          />
+        )}
       </div>
     </div>
   );

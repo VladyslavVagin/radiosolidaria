@@ -9,8 +9,8 @@ const ImageHero = () => {
         <Image
           src={"/images/logo/tv/logo-tv-notext.webp"}
           alt="Logo de Radio Solidaria"
-          width={150}
-          height={68}
+          width={130}
+          height={58}
         />
       </div>
     </section>

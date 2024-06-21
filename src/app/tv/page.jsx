@@ -7,8 +7,8 @@ import css from "./page.module.css";
 const page = () => {
   return (
     <section>
+      <ImageHero />
       <div className={css.container}>
-        <ImageHero />
         <div className={css.heroContainer}>
           <VideoButtons />
         </div>

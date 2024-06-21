@@ -16,6 +16,6 @@
   }
 
   .link:hover {
-    box-shadow: -7px 7px 41px #4b9e48, 7px -7px 41px #498a3c;
+    box-shadow: -7px 7px 41px rgb(25, 179, 140), 7px -7px 41px rgb(41, 184, 148);
   }
 }

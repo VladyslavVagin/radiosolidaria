@@ -53,6 +53,7 @@
   .socialContainer {
     width: 40px;
     height: 40px;
+    transition: var(--hover-effect);
   }
 
   .socialList {
@@ -67,6 +68,6 @@
 
 @media screen and (min-width: 1200px) {
   .socialContainer:hover {
-    box-shadow: 10px 10px 30px rgb(4, 122, 30), -10px -10px 30px rgb(4, 122, 30);
+    box-shadow: 10px 10px 30px var(--accent-color), -10px -10px 30px var(--accent-color);
   }
 }

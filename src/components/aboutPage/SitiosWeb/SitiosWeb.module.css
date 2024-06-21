@@ -106,9 +106,9 @@
 
 @media screen and (min-width: 1200px) {
   .link:hover {
-    -webkit-box-shadow: 0px 6px 8px -1px rgba(114, 156, 108, 1);
-    -moz-box-shadow: 0px 6px 8px -1px rgba(114, 156, 108, 1);
-    box-shadow: 0px 6px 8px -1px rgba(114, 156, 108, 1);
+    -webkit-box-shadow: 0px 6px 8px -1px rgb(41, 132, 145);
+    -moz-box-shadow: 0px 6px 8px -1px rgb(41, 132, 145);
+    box-shadow: 0px 6px 8px -1px rgb(41, 132, 145);
   }
 
   .link:hover .photoWeb {
@@ -121,10 +121,10 @@
   }
 
   .linkToWeb:hover {
-    color: var(--television-color);
+    color: var(--white-color);
   }
 
   .linkToWeb:hover .icon {
-    fill: var(--television-color);
+    fill: var(--white-color);
   }
 }

@@ -6,12 +6,12 @@
   row-gap: 20px;
   padding: 10px 0;
   background-color: var(--accent-color);
+  animation: appear 1.2s ease;
 }
 
 .imageBox img {
   object-fit: contain;
   height: auto;
-  animation: appear 1.2s ease;
 }
 
 @keyframes appear {
